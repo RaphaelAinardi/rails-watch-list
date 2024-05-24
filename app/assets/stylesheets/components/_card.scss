@@ -1,0 +1,74 @@
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Custom Styles
+.header {
+  position: relative;
+  background: url("path/to/background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.my-lists {
+  padding: 2rem 0;
+
+  .card {
+    .card-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    &:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+  }
+}
